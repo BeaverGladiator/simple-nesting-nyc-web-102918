@@ -16,8 +16,8 @@ def hopper
         }
      }
   known_for = programmer_hash[:grace_hopper][:known_for]
-  known_for.split << "FORTRAN"
-  programmer_hash[:grace_hopper][:known_for] = known_for
+  new_known_for = known_for.split << "FORTRAN"
+  programmer_hash[:grace_hopper][:known_for] = new_known_for
 
 end
 
