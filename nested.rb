@@ -1,4 +1,4 @@
-
+require "pry"
 def hopper
 	programmer_hash = 
  		{
@@ -15,7 +15,9 @@ def hopper
           :languages => ["C"]
         }
      }
-  programmer_hash[:grace_hopper][:known_for].to_a
+    binding.pry
+  known_for = programmer_hash[:grace_hopper][:known_for]
+  known_for.to_a
   programmer_hash[:grace_hopper][:known_for] << "FORTRAN"
 
 end
