@@ -15,7 +15,6 @@ def hopper
           :languages => ["C"]
         }
      }
-    binding.pry
   programmer_hash[:grace_hopper][:known_for].split
   programmer_hash[:grace_hopper][:known_for] << "FORTRAN"
 
